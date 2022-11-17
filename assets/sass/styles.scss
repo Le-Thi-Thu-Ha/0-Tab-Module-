@@ -1,0 +1,115 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  line-height: 1.5;
+  font-family: 'Poppins', sans-serif;
+  text-rendering: optimizeSpeed;
+}
+
+body {
+  font-size: 1.6rem;
+  min-height: 100vh;
+  color: rgba(22, 24, 35, 1);
+  direction: ltr;
+  overscroll-behavior: contain;
+  -webkit-font-smoothing: antialiased;
+}
+
+
+
+
+.wrapper {
+    max-width: 72rem;
+    margin: 15% auto;
+    color: #333;
+}
+
+.tabs-main {
+    display: flex;
+    color: #c23564;
+    cursor: pointer;
+    font-size: 2rem;
+    position: relative;
+
+}
+
+.tabs-main .line {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 6px;
+  border-radius: 15px;
+  background-color: #c23564;
+  transition: all 0.2s ease;
+}
+
+.tab-item {
+  min-width: 8rem;
+  padding: 1.6rem 2rem 1.1rem 2rem;
+  font-size: 2rem;
+  text-align: center;
+  color: #c23564;
+  background-color: #fff;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom: 5px solid transparent;
+  opacity: 0.6;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+
+
+.tabs-main .line {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 6px ;
+    background-color: #c23564;
+    width: 0;
+}
+
+.tab-icon {
+  font-size: 24px;
+  width: 32px;
+  position: relative;
+  top: 2px;
+}
+
+.tab-item:hover {
+  opacity: 1;
+  background-color: rgba(194, 53, 100, 0.05);
+  border-color: rgba(194, 53, 100, 0.1);
+}
+
+.tab-item.active {
+  opacity: 1;
+}
+
+
+.tabs-content {
+  padding: 28px 0;
+}
+
+
+
+.tab-details {
+  display: none;
+  color: #333333;
+  h2 {
+    margin: 0 0 8px;
+    font-size: 2.4rem;
+    font-weight: 700;
+  }
+}
+
+
+.tab-details.active {
+  display: block;
+}
